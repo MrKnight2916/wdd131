@@ -1,0 +1,93 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Roboto font utility classes */
+.roboto-100 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-400 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-700 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    /* Use Roboto bold */
+}
+
+/* Navigation */
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: 400;
+    /* Roboto regular */
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    margin-top: 2rem;
+    font-weight: 400;
+    /* Roboto regular */
+}

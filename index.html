@@ -4,16 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-    <meta description="WDD 131 Course Homepage">
-    <meta author="Eduardo Amador">
-    <link rel="stylesheet" href="styles.css">
+    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Eduardo Amador, Course homepage">
+    <meta name="author" content="Eduardo Amador">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Welcome to WDD 131</h1>
-    <p>This is the homepage for the WDD 131 course.</p>
-</body>
+    <!-- Header -->
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">BYU-I Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite
+                Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
 
-</html>
+    <!-- Main -->
+    <main>
+        <h1>Your Name</h1>
+
+        <section class="card">
+            <h2>Section 1</h2>
+            <img src="images/image1.jpg" alt="Description 1">
+            <p>Content for the first card</p>
+        </section>
+
+        <section class="card">
+            <h2>Section 2</h2>
+            <img src="images/image2.jpg" alt="Description 2">
+            <p>Content for the second card</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="currentyear"></span> Your Name, Country</p>
+        <p id="
