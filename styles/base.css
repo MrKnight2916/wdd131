@@ -49,16 +49,41 @@ header {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    /* Use Roboto bold */
 }
 
 /* Navigation */
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    flex: 1 0 auto;
+}
+
 nav a {
-    margin: 0 1rem;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
     text-decoration: none;
-    color: #0073e6;
-    font-weight: 400;
-    /* Roboto regular */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    color: #ffea00;
 }
 
 /* Main */
@@ -70,24 +95,227 @@ main {
     gap: 2rem;
 }
 
-.card {
+/* Tarjeta de perfil completa */
+/* Tarjeta de perfil completa */
+.profile-card {
     border: 1px solid #ccc;
-    padding: 1rem;
     border-radius: 8px;
     background-color: #fafafa;
+    padding: 2rem;
+    max-width: 1200px;
+    /* más ancho para expandir horizontalmente */
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.card img {
+/* Sombra suave en títulos y párrafos */
+.profile-card h2,
+.profile-card p.roboto-400 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* About Me: texto a la izquierda, foto a la derecha */
+.profile-card .about-me {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #e0f7fa;
+    /* color de fondo para About Me */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bloque Country Info */
+.profile-card .country {
+    background-color: #fff8e1;
+    /* color de fondo distinto del About Me */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    /* separa del About Me */
+}
+
+/* Ajuste de flex para About Me */
+.profile-card .about-me .bio {
+    flex: 2;
+    min-width: 300px;
+}
+
+.profile-card .about-me .photo {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Country info: título arriba, línea divisoria, foto a la izquierda, texto a la derecha */
+.profile-card .country h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.profile-card .country hr {
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.profile-card .country .country-content {
+    display: flex;
+    align-items: center;
+    /* alineación horizontal */
+    gap: 2rem;
+}
+
+.profile-card .country .country-photo {
+    flex: 0 0 200px;
+    /* ancho fijo de la foto del país */
+}
+
+.profile-card .country .country-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Imágenes responsivas */
+.profile-card img {
+    border-radius: 8px;
     max-width: 100%;
-    border-radius: 4px;
+    height: auto;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+
+    .profile-card .about-me,
+    .profile-card .country .country-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 700px) {
+    .profile-card {
+        padding: 1rem;
+    }
+
+    .profile-card .about-me .bio,
+    .profile-card .country .country-text {
+        min-width: 150px;
+    }
+}
+
+.courses-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    padding: 2rem;
+    max-width: 1200px;
+    min-height: 550px;
+    /* misma altura que la primera tarjeta */
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses-card .courses-content {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Cada columna ocupa la mitad del espacio disponible */
+.courses-card .courses-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Títulos internos */
+.courses-card .courses-column h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividad: columnas apiladas en pantallas pequeñas */
+@media (max-width: 1024px) {
+    .courses-card .courses-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 700px) {
+    .courses-card {
+        padding: 2rem;
+        min-height: auto;
+    }
+
+    .courses-card .courses-content {
+        flex-direction: column;
+    }
+}
+
+
+/* Bandera alineada con texto */
+.card .location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.card .location img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Texto descriptivo del país */
+.card .country-description {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Imágenes responsivas */
+.profile-card img,
+.about-me img,
+.country img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Footer */
 footer {
-    text-align: center;
+    width: 200%;
+    max-width: 1275px;           /* Igual que tus tarjetas */
+    margin: 2rem auto 0 auto;    /* Centrado horizontalmente */
     padding: 1rem;
     background-color: #f0f0f0;
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
     font-weight: 400;
-    /* Roboto regular */
+    box-sizing: border-box;
+}
+
+footer .country-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1rem;
+}
+
+footer .country-line img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 1280px) {
+    footer {
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+        font-size: 0.95rem;
+    }
 }

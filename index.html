@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Eduardo Amador</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Eduardo Amador, Course homepage">
     <meta name="author" content="Eduardo Amador">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -21,33 +22,107 @@
     <!-- Header -->
     <header>
         <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <!-- Navigation with ul/li for semantic structure -->
         <nav>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">BYU-I Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite
-                Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="https://www.linkedin.com/" class="active">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">BYU-I Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite
+                        Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- Main -->
     <main>
-        <h1>Your Name</h1>
+        <section class="card profile-card">
+            <!-- Bloque: About Me -->
+            <div class="about-me">
+                <div class="bio">
+                    <h2 class="roboto-700">About Me</h2>
+                    <p class="roboto-400">
+                        Hello! My name is Eduardo José Amador Encarnación, and I am from
+                        <span class="location">
+                            Santo Domingo, Dominican Republic
+                        </span>.
+                        I am currently working as an IT assistant, helping to solve technical issues and support my
+                        team.
+                        I enjoy learning about web development and exploring new technologies. In my free time, I like
+                        playing video games, watching movies or series, and relaxing.
+                    </p>
+                </div>
+                <div class="photo">
+                    <img src="images/profile.jpg" alt="Eduardo Amador" width="200">
+                </div>
+            </div>
 
-        <section class="card">
-            <h2>Section 1</h2>
-            <img src="images/image1.jpg" alt="Description 1">
-            <p>Content for the first card</p>
+            <!-- Bloque: Country Info -->
+            <div class="country">
+                <h2 class="roboto-700">Santo Domingo, Dominican Republic</h2>
+                <hr>
+                <div class="country-content">
+                    <div class="country-photo">
+                        <img src="images/Flag_of_the_Dominican_Republic.png" alt="Dominican Republic" width="200">
+                    </div>
+                    <div class="country-text">
+                        <p class="roboto-400">
+                            The Dominican Republic is a Caribbean nation known for its beautiful beaches, resorts, and
+                            rich
+                            culture.
+                            Santo Domingo, the capital, is the oldest European settlement in the Americas. The country
+                            is famous
+                            for its music, festivals, and vibrant cuisine, making it a lively and fascinating place to
+                            live.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="card">
-            <h2>Section 2</h2>
-            <img src="images/image2.jpg" alt="Description 2">
-            <p>Content for the second card</p>
-        </section>
-    </main>
+        <section class="card profile-card courses-card">
+            <h2 class="roboto-700">Courses and Web Resources</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>© <span id="currentyear"></span> Your Name, Country</p>
-        <p id="
+            <div class="courses-content">
+                <!-- Columna izquierda: Platforms -->
+                <div class="courses-column">
+                    <h3 class="roboto-700">Platforms where I took courses:</h3>
+                    <ul class="roboto-400">
+                        <li>Udemy</li>
+                        <li>W3Schools</li>
+                        <li>freeCodeCamp</li>
+                        <li>Coursera</li>
+                        <li>edX</li>
+                    </ul>
+                </div>
+
+                <!-- Columna derecha: Resources -->
+                <div class="courses-column">
+                    <h3 class="roboto-700">Web development resources I use:</h3>
+                    <ul class="roboto-400">
+                        <li>MDN Web Docs (Mozilla)</li>
+                        <li>Stack Overflow</li>
+                        <li>GeeksforGeeks</li>
+                        <li>CSS-Tricks</li>
+                        <li>Dev.to</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <span class="country-line">
+                    © <span id="currentyear"></span> Eduardo Amador, Dominican Republic
+                    <img src="images/flag.png" alt="Dominican Republic Flag" width="24">
+                </span>
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+</body>
+
+</html>
