@@ -18,13 +18,12 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// Ajustar menú al cambiar tamaño de pantalla
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
-        nav.style.display = "flex";      // mostrar siempre en pantallas grandes
-        menuToggle.textContent = "☰";    // reset icon
+        nav.style.display = "flex";      
+        menuToggle.textContent = "☰";    
     } else {
-        nav.style.display = "none";       // ocultar en móviles
+        nav.style.display = "none";      
         menuToggle.textContent = "☰";
     }
 });
