@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>República Dominicana – WDD 131</title>
+    <meta name="description" content="Página de República Dominicana – WDD 131 – Fundamentos Web Dinámicos">
+    <meta name="author" content="Eduardo Amador">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 id="place-title">República Dominicana</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="image-container">
+            <img src="images/cigua-palmera.webp" alt="República Dominicana" class="large-image">
+
+            <div class="data-card">
+                <h2>Data</h2>
+                <p>Area: 48,671 km²</p>
+                <p>Population: 10.8 million</p>
+                <p>Capital: Santo Domingo</p>
+                <p>Languages: Spanish</p>
+                <p>Currency: Dominican Peso (DOP)</p>
+                <p>Time Zone: UTC−4</p>
+                <p>Calling Code: +1 809, +1 829, +1 849</p>
+                <p>Internet TLD: .do</p>
+            </div>
+
+            <div class="weather-card">
+                <h2>Weather ⛅</h2>
+                <p>Temperature: 28°C</p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind: 15 km/h</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="currentYear"></span> Eduardo Amador – República Dominicana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
