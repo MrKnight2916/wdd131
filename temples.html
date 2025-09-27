@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – WDD 131</title>
+    <meta name="description" content="Temple Album – WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Eduardo Amador">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <h1 id="album-title">Temple Album</h1>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>My Temple Collection</h2>
+        <div class="gallery">
+            <!-- Example figure items -->
+            <figure>
+                <img src="images/santo_domingo_dominican_republic_temple_lds.jpeg" alt="Santo Domingo, Dominican Republic Temple">
+                <figcaption>Santo Domingo, Dominican Republic</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san_juan_puerto_rico_temple_exterior.jpeg" alt="San Juan, Puerto Rico Temple">
+                <figcaption>San Juan, Puerto Rico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mexico_city_temple_lds.jpeg" alt="Mexico City, Mexico Temple">
+                <figcaption>Mexico City, Mexico Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sao_paulo_brazil_temple_lds.jpeg" alt="São Paulo, Brazil Temple">
+                <figcaption>São Paulo, Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/buenos_aires_argentina_temple.jpeg" alt="Buenos Aires, Argentina Temple">
+                <figcaption>Buenos Aires, Argentina Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bogota_colombia_temple_lds.jpeg" alt="Bogotá, Colombia Temple">
+                <figcaption>Bogotá, Colombia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/santiago_chile_lds_temple.jpeg" alt="Santiago, Chile Temple">
+                <figcaption>Santiago, Chile Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lima_peru_temple_lds.jpeg" alt="Lima, Peru Temple">
+                <figcaption>Lima, Peru Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="currentYear"></span> Eduardo Amador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

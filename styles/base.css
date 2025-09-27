@@ -79,8 +79,8 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-nav a.active {
-    color: #ffea00;
+/*.active {
+    color: yellow;
 }
 
 /* Main */
