@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>República Dominicana – WDD 131</title>
-    <meta name="description" content="Página de República Dominicana – WDD 131 – Fundamentos Web Dinámicos">
+    <title>Dominican Republic – WDD 131</title>
+    <meta name="description" content="Dominican Republic page – WDD 131 – Dynamic Web Fundamentals">
     <meta name="author" content="Eduardo Amador">
 
     <!-- Google Fonts -->
@@ -21,14 +21,20 @@
 <body>
     <!-- Header -->
     <header>
-        <h1 id="place-title">República Dominicana</h1>
+        <h1 id="place-title">Dominican Republic</h1>
     </header>
 
     <!-- Main Content -->
     <main>
         <div class="image-container">
-            <img src="images/cigua-palmera.webp" alt="República Dominicana" class="large-image">
+            <!-- Responsive Image -->
+            <picture>
+                <source srcset="images/cigua-palmera-small.webp" media="(max-width: 768px)">
+                <source srcset="images/cigua-palmera-medium.webp" media="(max-width: 1024px)">
+                <img src="images/cigua-palmera.webp" alt="Dominican Republic" class="large-image">
+            </picture>
 
+            <!-- Data Card -->
             <div class="data-card">
                 <h2>Data</h2>
                 <p>Area: 48,671 km²</p>
@@ -41,11 +47,10 @@
                 <p>Internet TLD: .do</p>
             </div>
 
+            <!-- Weather Card -->
             <div class="weather-card">
-                <h2>Weather ⛅</h2>
-                <div class="weather-icon">
-                    <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
-                </div>
+                <h2>Weather</h2>
+                <div class="weather-icon" aria-label="Weather Icon"></div>
                 <p>Temperature: 28°C</p>
                 <p>Conditions: Partly Cloudy</p>
                 <p>Wind: 15 km/h</p>
@@ -56,7 +61,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© <span id="currentYear"></span> Eduardo Amador – República Dominicana</p>
+        <p>© <span id="currentYear"></span> Eduardo Amador – Dominican Republic</p>
         <p id="lastModified"></p>
     </footer>
 </body>
