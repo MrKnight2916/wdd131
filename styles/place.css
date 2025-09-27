@@ -87,8 +87,9 @@ main {
 }
 
 /* Weather pseudo-element for large view */
-.weather-card h2 .weather-emoji {
-    display: inline-block;
+/* Add Weather emoji via ::after */
+.weather-card h2::after {
+    content: " ⛅";
     font-size: 1.5rem;
     margin-left: 0.3rem;
 }
