@@ -1,5 +1,5 @@
 /* -------------------- */
-/* Reset básico */
+/* Basic Reset */
 /* -------------------- */
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 /* -------------------- */
-/* Tipografía y colores */
+/* Typography and Colors */
 /* -------------------- */
 body {
     font-family: 'Roboto', sans-serif;
@@ -47,7 +47,7 @@ header {
 }
 
 /* -------------------- */
-/* Botón hamburguesa */
+/* Hamburger Button */
 /* -------------------- */
 #menu-toggle {
     display: none;
@@ -59,7 +59,7 @@ header {
 }
 
 /* -------------------- */
-/* Navegación */
+/* Navigation */
 /* -------------------- */
 nav {
     display: flex;
@@ -110,7 +110,7 @@ main h2 {
 }
 
 /* -------------------- */
-/* Galería / Tarjetas */
+/* Gallery / Cards */
 /* -------------------- */
 .gallery {
     display: grid;
@@ -191,7 +191,7 @@ footer {
 }
 
 /* -------------------- */
-/* Pantallas grandes */
+/* Large Screens */
 /* -------------------- */
 @media (min-width: 769px) {
     header {
