@@ -316,3 +316,10 @@ footer .country-line img {
         font-size: 0.95rem;
     }
 }
+
+:root {
+    --primary-color: #0077cc;
+    --secondary-color: #4CAF50;
+    --text-color: #333;
+    --bg-color: #fdfdfd;
+}
