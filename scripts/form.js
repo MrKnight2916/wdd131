@@ -1,4 +1,4 @@
-// Array de productos
+// Array of products
 const products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -7,13 +7,13 @@ const products = [
   { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-// Seleccionamos el elemento select
+// Select the select element
 const productSelect = document.getElementById("productName");
 
-// Creamos las opciones dinámicamente
+// Create the options dynamically
 products.forEach(product => {
   const option = document.createElement("option");
-  option.value = product.id;       // valor del producto
-  option.textContent = product.name; // nombre que se muestra
+  option.value = product.id;       
+  option.textContent = product.name; 
   productSelect.appendChild(option);
 });

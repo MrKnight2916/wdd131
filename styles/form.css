@@ -30,7 +30,7 @@ legend {
     color: white;
 }
 
-/* Asegurar contraste suficiente con fondo */
+/* Ensure sufficient contrast with the background */
 h1,
 h2 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@ label {
     margin-top: 10px;
 }
 
-/* Para alinear checkboxes y radios con sus labels */
+/* To align checkboxes and radios with their labels */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -62,17 +62,16 @@ label {
     gap: 8px;
 }
 
-/* Alineación de input con label en misma línea */
+/* Align input with labels on the same line */
 .checkbox-group label,
 .radio-group label {
     display: flex;
     align-items: center;
     gap: 8px;
     color: #333;
-    /* Texto negro */
 }
 
-/* Inputs alineados sin margen por defecto */
+/* Inputs aligned without margin by default */
 .radio-group input,
 .checkbox-group input {
     margin: 0;
@@ -88,7 +87,7 @@ textarea {
     box-sizing: border-box;
 }
 
-/* Botón submit separado del footer */
+/* Submit button separated from the footer */
 input[type="submit"] {
     background-color: var(--primary-color);
     color: white;
@@ -98,7 +97,6 @@ input[type="submit"] {
     transition: background-color 0.3s;
     margin-top: 20px;
     margin-bottom: 40px;
-    /* separa del footer */
 }
 
 input[type="submit"]:hover {
@@ -114,10 +112,9 @@ fieldset {
     gap: 10px;
 }
 
-/* Legend dentro de fieldset */
+/* Legend within the fieldset */
 fieldset legend {
     color: #333;
-    /* Texto negro */
     font-weight: bold;
 }
 
