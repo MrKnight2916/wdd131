@@ -61,8 +61,12 @@
 
     <footer>
         <p>© 2025 Eduardo Amador – Dominican Republic</p>
-        <p>Last modified: 10/11/2025 13:10:30</p>
+        <p id="lastModified"></p>
     </footer>
+
+        <script>
+            document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+        </script>
 
     <script src="scripts/form.js"></script>
 </body>
