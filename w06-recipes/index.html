@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Delicious Recipes</h1>
+        <nav>
+            <ul class="category-menu">
+                <li><button class="category-btn active" onclick="filterRecipes('all')">All</button></li>
+                <li><button class="category-btn" onclick="filterRecipes('breakfast')">Breakfast</button></li>
+                <li><button class="category-btn" onclick="filterRecipes('lunch')">Lunch</button></li>
+                <li><button class="category-btn" onclick="filterRecipes('dinner')">Dinner</button></li>
+                <li><button class="category-btn" onclick="filterRecipes('dessert')">Dessert</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="recipes-container" id="recipesContainer"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Eduardo Amador – Dominican Republic</p>
+        <p><a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+    </script>
+    <script src="../scripts/recipes.js" defer></script>
+</body>
+
+</html>
