@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p id="reviewCount"></p>
+    </main>
+
+    <footer>
+        <p>© 2025 Eduardo Amador</p>
+        <p>Last modified: 10/11/2025 13:10:30</p>
+    </footer>
+
+    <script>
+        // Incrementar contador de reviews en localStorage
+        let count = localStorage.getItem("reviewCount") || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+
+        // Mostrar en la página
+        document.getElementById("reviewCount").textContent = `Total reviews submitted: ${count}`;
+    </script>
+</body>
+
+</html>
